@@ -1,0 +1,18 @@
+AddDefaultCharset utf8
+
+RewriteRule ^.htaccess$ - [F]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^amaxinteractive.com/myprotected
+RewriteRule (.*) /myprotected/$1 [R=301,L]
+
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ /myprotected/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+RewriteBase /myprotected/
+
+#php_value upload_max_filesize 100M

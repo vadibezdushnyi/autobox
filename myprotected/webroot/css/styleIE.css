@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body,html
+{}
+.l-z-user-messages
+{
+	position:absolute;
+	width:21px;
+	height:21px;
+	padding:0 0 2px 0;
+	line-height:21px;
+	font-size:11px;
+	font-weight: bold;
+	top:13px;
+	right:40px;
+	border: none !important;
+	background: url(../img/user-messag-icon-slider.png) left center no-repeat;
+	color:#FFF;
+}
+.l-z-user-messages:hover
+{
+	background: url(../img/user-messag-icon-slider.png) right center no-repeat;
+}
+
+input.table-checkbox[type="checkbox"]
+{
+    display: block;
+	cursor:pointer;
+	margin-top:5px;
+	margin-left:5px;
+}
+label.tab-check-lab 
+{
+	display:none;
+}

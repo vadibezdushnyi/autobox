@@ -1,0 +1,55 @@
+<?php 
+	// Start header content
+
+	$headParams = array( 'parent'=>$parent, 'alias'=>$alias, 'id'=>$id, 'item_id'=>$item_id, 'appTable'=>$appTable, 'afterSubmit'=>2 );
+	
+	$data['headContent'] = $zh->getCardCreateHeader($headParams);
+	
+	// Start body content
+	
+	$cardItem 	= $zh->getProducerIndustryItem($item_id, $lpx);
+	$producers 	= $zh->getIndustryProducers($lpx);
+
+	$rootPath = ROOT_PATH;
+	
+	$cardTmp = array(
+		'LPX'							=>	array( 'type'=>'hidden',		'field'=>'lpx', 'value'=>$lpx ), 
+		'Publication'					=>	array( 'type'=>'block', 		'field'=>'block', 			'params'=>array( 'reverse'=>true ) ),
+		'clear-1'						=>	array( 'type'=>'clear' ),
+		'[EN] Name'						=>	array('type'=>'input',			'field'=>'name'),
+		'[DE] Name'						=>	array('type'=>'input',			'field'=>'de_name'),
+		'[RU] Name'						=>	array('type'=>'input',			'field'=>'ru_name'),
+		'[SK] Name'						=>	array('type'=>'input',			'field'=>'sk_name'),
+		'[CZ] Name'						=>	array('type'=>'input',			'field'=>'cz_name'),
+		'[TR] Name'						=>	array('type'=>'input',			'field'=>'tr_name'),
+		'[ES] Name'						=>	array('type'=>'input',			'field'=>'es_name'),
+		'[AR] Name'						=>	array('type'=>'input',			'field'=>'ar_name'),
+		'clear-2'						=>	array( 'type'=>'clear' ),
+		'Related producers'				=>	array( 'type'=>'select_multiple', 	'field'=>'refs', 		'params'=>array( 
+																											'selected'=>$cardItem['refs'], 
+																											'elements'=>$producers, 
+																											'name_key'=>'name', 
+					 																						'value_key'=>'id', 
+					 																						'selected_key'=>'id', 
+																										) ),
+		'Images' 			=> 	array('type'=>'header'),
+	 	'File'				=>	array( 'type'=>'image_mono','field'=>'logo', 			'params'=>array( 'path'=>FILESROOT."/img/content/parts/", 'appTable'=>$appTable, 'id'=>$item_id ) ),
+	 );
+
+	$cardEditFormParams = array( 'cardItem'=>$cardItem, 'cardTmp'=>$cardTmp, 'rootPath'=>$rootPath, 'actionName'=>"createProducerIndustry", 'ajaxFolder'=>'create', 'appTable'=>$appTable );
+	
+	$cardEditFormStr = $zh->getCardEditForm($cardEditFormParams);
+	
+	// Join content
+	
+	$data['bodyContent'] .= "
+		<div class='ipad-20' id='order_conteinter'>
+			<h3 class='new-line'>NEW INDUSTRY</h3>";
+	
+	$data['bodyContent'] .= $cardEditFormStr;
+				
+	$data['bodyContent'] .=	"
+		</div>
+	";
+
+?>

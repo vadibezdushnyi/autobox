@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no">
+    <title>Autobox24: Shopping cart</title>
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="page description" />
+    <meta name="keywords" content="keys" />
+    <meta name="author" content="Positive Business" />
+    <meta property="og:title" content="Autobox">
+    <meta property="og:url" content="http://domainname">
+    <meta property="og:site_name" content="Autobox"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://domainname/img/_poster.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:description" content="autobox markup">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon -->
+
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    
+        <link rel="stylesheet" href="assets/css/user.css">
+    
+
+    <!--[if IE]>
+        <script src="assets/js/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"></script>
+        <script src="https://wzrd.in/standalone/es7-shim@latest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="user-logged-in">
+
+<div class="preloader-global">
+    <span class="process">
+        <div class="spinner-wrapper">
+          <img class="spinner" src="assets/img/loader/2.png" alt="">
+        </div>
+    </span>
+</div>
+<!-- Page header -->
+<header class="page-header">
+	<div class="page-wrapper">
+		<div class="page-container">
+			<a href="index.html" class="logo"><img src="assets/img/content/logo.png" alt="Autobox"></a>
+
+			<div class="top-panel">
+				<a href="tel: +491805288626924" class="tel icon icon-telephone2">+491805 2886269 24</a>
+				<a href="" class="mail-link icon icon-mail js_modal-open" data-modal-type="email-feedback" data-modal-part="1"></a>
+				<a href="" class="cart-link icon icon-cart"><span class="amount">2</span><span class="price">500&euro;</span></a>
+				<div class="languages">
+					<a href="javascript:void(0)" class="language icon icon-arrow-down4"><img src="assets/img/icons-general/flags/en.png" alt="en">EN</a>
+					<ul class="languages__list">
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/en.png" alt="en">EN</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/de.png" alt="de">DE</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/ru.png" alt="ru">RU</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/cz.png" alt="cz">CZ</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/sk.png" alt="sk">SK</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/tr.png" alt="tr">TR</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/es.png" alt="es">ES</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><img src="assets/img/icons-general/flags/eg.png" alt="ar">AR</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-search">
+					<button type="button" class="btn-search-mobile icon icon-search js_header-search-mobile"></button>
+					<form>
+						<button type="submit" class="btn-search icon icon-search js_header-search-submit"></button>
+                        <label>
+                            <input type="text" placeholder="Part code" class="input-search">
+                        </label>
+                        <button type="button" class="btn-close icon icon-cross2 js_header-search-close"></button>
+					</form>
+				</div>
+				<div class="btn-burger js_menu-btn">
+					<span></span>
+				</div>
+			</div>
+
+			<a href="javascript:void(0)" class="btn-logout icon icon-logout"></a>
+
+			<div class="header-menu">
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-submenu">
+							<a href="./about-us.html">About Us</a>
+							<span class="plus"></span>
+							<div class="submenu">
+								<div class="page-wrapper">
+									<ul>
+										<li>
+											<a href="./company-profile.html">Company Profile</a>
+										</li>
+										<li>
+											<a href="./why-us.html">Why you choose us!</a>
+										</li>
+										<li>
+											<a href="./certificates.html">Certificates</a>
+										</li>
+										<li>
+											<a href="./gallery.html">Gallery</a>
+										</li>
+										<li>
+											<a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="1">Registration</a>
+										</li>
+										<li>
+											<a<a href="./join-us.html">Join us</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Your Benefits</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./parts.html">Parts</a>
+						</li>
+						<li>
+							<a href="./news.html">News</a>
+						</li>
+						<li class="has-submenu">
+							<a href="./contacts.html">Contacts</a>
+							<span class="plus"></span>
+							<div class="submenu">
+								<div class="page-wrapper">
+									<ul>
+										<li>
+											<a href="./contacts.html">Contact us</a>
+										</li>
+										<li>
+											<a href="./faq.html">FAQ</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Feedback</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Sitemap</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="logged-link logged-link--first">
+							<a href="./profile.html">Profile</a>
+						</li>
+						<li class="logged-link">
+							<a href="javascript:void(0)">New order</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobile-header-bottom">
+					<a href="tel: +491805288626924" class="tel icon icon-telephone2">+491805 2886269 24</a><a href="" class="mail-link icon icon-mail js_modal-open" data-modal-type="email-feedback" data-modal-part="1"></a>
+					<div class="login-links">
+						<a href="javascript:void(0)">Log out<span class="icon icon-logout"></span></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- End of Page header -->
+
+
+<main class="page-content">
+
+
+<div class="page-header-bg page-header-bg--profile animate">
+    <div class="page-header-bg__image" style="background-image: url('assets/img/content/bg2.jpg')"></div>
+    <div class="page-wrapper">
+        <div class="page-container">
+            <h2 class="page-title">Shopping cart</h2>
+            <div class="ext-balance">
+                <div class="ext-balance__item">
+                    <h5 class="ext-balance__title"><span class="t-desktop">Debt</span><span class="t-mobile">Debt</span></h5>
+                    <span class="ext-balance__val">0<span class="currency">&nbsp;€</span></span>
+                </div>
+                <div class="ext-balance__item">
+                    <h5 class="ext-balance__title"><span class="t-desktop">Balance</span><span class="t-mobile">Balance</span></h5>
+                    <span class="ext-balance__val green">5 000<span class="currency">&nbsp;€</span></span>
+                </div>
+                <div class="ext-balance__item">
+                    <h5 class="ext-balance__title"><span class="t-desktop">Deposit Available</span><span class="t-mobile">Deposit Available</span></h5>
+                    <span class="ext-balance__val">20 000<span class="currency">&nbsp;€</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section Cart -->
+<section class="section section--content-inner section-cart animate">
+    <div class="page-wrapper">
+        <div class="page-container">
+
+            <div class="profile-menu">
+                <div class="profile-menu__container">
+                    <a href="./profile.html">Profile</a>
+                    <a href="./balance.html">Balance<span class="icon icon-balance"></span></a>
+                    <a href="./pricelist.html">Price list</a>
+                    <a href="./cart.html" class="active">Shopping cart<span class="icon icon-cart"></span></a>
+                    <a href="./orders.html">My orders</a>
+                    <a href="./account-secure.html">Account secure</a>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <div class="cart-header-actions">
+                    <button class="btn btn-icon btn-black btn-cart-refresh"><span class="icon icon-refresh"></span>Refresh</button>
+                    <button class="btn btn-icon btn-black btn-add-products js_modal-open" data-modal-type="add-products"><span class="icon"><span class="plus"></span></span>Add Products</button>
+                </div>
+                <div class="cart-main">
+
+                    <!-- Cart table -->
+                    <div class="cart-table-container">
+                        <table id="cart-table" class="table-style-black table-wide table-underline js_table-tooltips js_dataTable">
+                            <thead>
+                                <tr>
+                                    <td class="cell-number">№</td>
+                                    <td class="cell-logo">Manuf.</td>
+                                    <td class="cell-partcode">Partcode</td>
+                                    <td class="cell-title">Title</td>
+                                    <td class="cell-discount">Disc.gr.</td>
+                                    <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                    <td class="cell-quantity">Quant.</td>
+                                    <td class="cell-total"><span class="price">Sum<span class="currency">€</span></span></td>
+                                    <td class="cell-comment">Com.</td>
+                                    <td class="cell-vin">VIN</td>
+                                    <td class="cell-delete"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-number" data-sort="1">
+                                        <div class="title-mobile"><span class="text">№</span></div>
+                                        <div class="cell-value"><b>1</b></div>
+                                    </td>
+                                    <td class="cell-logo" data-sort="Mazda">
+                                        <div class="title-mobile"><span class="text">Manuf.</span></div>
+                                        <div class="cell-value"><div class="logo-image"><img alt="" src="assets/img/icons-general/car-logos/Car-logos_Mazda.svg"></div></div>
+                                    </td>
+                                    <td class="cell-partcode" data-sort="03810371423815714">
+                                        <div class="title-mobile"><span class="text">Partcode</span></div>
+                                        <div class="cell-value"><span class="nowrap">03810371423815714</span></div>
+                                    </td>
+                                    <td class="cell-title" data-sort="TEIL AUSVERK.">
+                                        <div class="title-mobile"><span class="text">Title</span></div>
+                                        <div class="cell-value"><b>TEIL AUSVERK.</b></div>
+                                    </td>
+                                    <td class="cell-discount" data-sort="Mazda 50">
+                                        <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                        <div class="cell-value"><span class="nowrap">Mazda 50</span></div>
+                                    </td>
+                                    <td class="cell-price" data-sort="29,82">
+                                        <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap">29,82</span></div>
+                                    </td>
+                                    <td class="cell-quantity" data-sort="10"><div class="title-mobile"><span class="text">Quant.</span></div>
+                                        <div class="cell-value"><input type="text" class="input-quantity" value="10"></div>
+                                    </td>
+                                    <td class="cell-total" data-sort="29 820,00">
+                                        <div class="title-mobile"><span class="text"><span class="price">Sum<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap"><b>29 820,00</b></span></div>
+                                    </td>
+                                    <td class="cell-comment js_editable-cell" data-cell="cell-comment">
+                                        <div class="title-mobile"><span class="text">Com.</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-vin js_editable-cell" data-cell="cell-vin">
+                                        <div class="title-mobile"><span class="text">VIN</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Audi V6 part 15403.467 sold</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-delete">
+                                        <div class="title-mobile"><span class="text"></span></div>
+                                        <div class="cell-value"><button type="button" class="btn btn-delete icon icon-trash"></button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-number" data-sort="2">
+                                        <div class="title-mobile"><span class="text">№</span></div>
+                                        <div class="cell-value"><b>2</b></div>
+                                    </td>
+                                    <td class="cell-logo" data-sort="Audi">
+                                        <div class="title-mobile"><span class="text">Manuf.</span></div>
+                                        <div class="cell-value"><div class="logo-image"><img alt="" src="assets/img/icons-general/car-logos/Car-logos_Audi.svg"></div></div>
+                                    </td>
+                                    <td class="cell-partcode" data-sort="0381037142381571">
+                                        <div class="title-mobile"><span class="text">Partcode</span></div>
+                                        <div class="cell-value"><span class="nowrap">0381037142381571</span></div>
+                                    </td>
+                                    <td class="cell-title" data-sort="TEIL AUSVERK.">
+                                        <div class="title-mobile"><span class="text">Title</span></div>
+                                        <div class="cell-value"><b>TEIL AUSVERK.</b></div>
+                                    </td>
+                                    <td class="cell-discount" data-sort="Audi 03">
+                                        <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                        <div class="cell-value"><span class="nowrap">Audi 03</span></div>
+                                    </td>
+                                    <td class="cell-price" data-sort="29,90">
+                                        <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap">29,90</span></div>
+                                    </td>
+                                    <td class="cell-quantity" data-sort="10"><div class="title-mobile"><span class="text">Quant.</span></div>
+                                        <div class="cell-value"><input type="text" class="input-quantity" value="10"></div>
+                                    </td>
+                                    <td class="cell-total" data-sort="29 820,00">
+                                        <div class="title-mobile"><span class="text"><span class="price">Sum<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap"><b>29 820,00</b></span></div>
+                                    </td>
+                                    <td class="cell-comment js_editable-cell" data-cell="cell-comment">
+                                        <div class="title-mobile"><span class="text">Com.</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-vin js_editable-cell" data-cell="cell-vin">
+                                        <div class="title-mobile"><span class="text">VIN</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Audi V6 part 15403.467 sold</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-delete">
+                                        <div class="title-mobile"><span class="text"></span></div>
+                                        <div class="cell-value"><button type="button" class="btn btn-delete icon icon-trash"></button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-number" data-sort="3">
+                                        <div class="title-mobile"><span class="text">№</span></div>
+                                        <div class="cell-value"><b>3</b></div>
+                                    </td>
+                                    <td class="cell-logo" data-sort="Mazda">
+                                        <div class="title-mobile"><span class="text">Manuf.</span></div>
+                                        <div class="cell-value"><div class="logo-image"><img alt="" src="assets/img/icons-general/car-logos/Car-logos_BMW.svg"></div></div>
+                                    </td>
+                                    <td class="cell-partcode" data-sort="03810371423815717">
+                                        <div class="title-mobile"><span class="text">Partcode</span></div>
+                                        <div class="cell-value"><span class="nowrap">03810371423815717</span></div>
+                                    </td>
+                                    <td class="cell-title" data-sort="TEIL AUSVERK.">
+                                        <div class="title-mobile"><span class="text">Title</span></div>
+                                        <div class="cell-value"><b>TEIL AUSVERK.</b></div>
+                                    </td>
+                                    <td class="cell-discount" data-sort="BMW 07">
+                                        <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                        <div class="cell-value"><span class="nowrap">BMW 07</span></div>
+                                    </td>
+                                    <td class="cell-price" data-sort="25,77">
+                                        <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap">24,77</span></div>
+                                    </td>
+                                    <td class="cell-quantity" data-sort="10"><div class="title-mobile"><span class="text">Quant.</span></div>
+                                        <div class="cell-value"><input type="text" class="input-quantity" value="10"></div>
+                                    </td>
+                                    <td class="cell-total" data-sort="29 820,00">
+                                        <div class="title-mobile"><span class="text"><span class="price">Sum<span class="currency">€</span></span></span></div>
+                                        <div class="cell-value"><span class="nowrap"><b>29 820,00</b></span></div>
+                                    </td>
+                                    <td class="cell-comment js_editable-cell" data-cell="cell-comment">
+                                        <div class="title-mobile"><span class="text">Com.</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-vin js_editable-cell" data-cell="cell-vin">
+                                        <div class="title-mobile"><span class="text">VIN</span></div>
+                                        <div class="editable-block js_editable">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Audi V6 part 15403.467 sold</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-delete">
+                                        <div class="title-mobile"><span class="text"></span></div>
+                                        <div class="cell-value"><button type="button" class="btn btn-delete icon icon-trash"></button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="cell-quantity">
+                                        <div class="title-mobile"><span class="text">Quantity</span></div><span class="nowrap">30</span>
+                                    </td>
+                                    <td class="cell-total">
+                                        <div class="title-mobile"><span class="text"><span class="price">Sum<span class="currency">€</span></span></span></div><span class="nowrap"><b>29 820,00</b></span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <!-- Negative balance -->
+                    <div class="cart-empty-container">
+                        <div class="form-style form-style--dark strong-m">
+                            <div class="form-footer">
+                                <div class="form-message icon icon-attention message-error active">
+                                    The available deposit is not sufficient for your current order.<br>
+                                    To complete your order, you need to increase your balance or contact your manager.<br>
+                                    The minimum refill amount: <strong class="price">69 460,00 €</strong>
+                                </div>
+<!--                                 <div class="action-buttons active">
+                                    <a href="javascript:void(0)" class="btn btn-red-small">Ok</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart table actions -->
+                    <div class="cart-footer-actions cart-footer-actions--ext">
+                        <div class="total-amount">
+                            <table>
+                                <tr>
+                                    <td><span class="text">Order amount:</span></td>
+                                    <td><span class="value">89 460,00 €</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text">VAT:</span></td>
+                                    <td><span class="value">0%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text">Total amount:</span></td>
+                                    <td><span class="value">89 460,00 €</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text">Order comment:</span></td>
+                                    <td>
+                                        <div class="field-block">
+                                            <div class="field-block__input-container">
+                                                <textarea placeholder="Comment..."></textarea>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="action-buttons">
+                            <button type="button" class="btn btn-grey-small">Clear all</button>
+                            <button type="button" class="btn btn-red-small disabled">Send the order</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+
+<!-- Page footer -->
+<footer class="page-footer">
+
+<div class="footer-top">
+	<div class="page-wrapper">
+		<div class="page-container">
+
+			<div class="two-cols">
+				<div class="col-left">
+					
+					<a href="index.html" class="logo-block">
+						<span class="logo"><img src="assets/img/content/logo.png" alt="Autobox"><span class="slogan">GENUINE&amp;OEM PARTS</span></span>
+						<div class="website">
+							<span>autobox24.com</span>
+						</div>
+					</a>
+
+					<div class="website-description">
+						<img src="assets/img/content/johan.jpg" alt="">
+						<div class="text">
+							<p>At autobox24.com, we live by a simple rule. We want to make sure that you never have to pay retail prices for your quality auto parts ever again. We go out of our way to provide a comprehensive list of replacement discount auto parts for most car and truck models that are available today.</p>
+							<p>Johann Mack, Owner</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-right">
+					
+					<div class="contacts">
+						<h4 class="title">Contact Us</h4>
+						<div class="contact-block">
+							<div class="contact">
+								<span class="contact__title">Address:</span>
+								<span class="contact__value">Karl-Ferdinand-Braun-Str. 25<br>50170 Kerpen, Germany</span>
+							</div>
+							<div class="contact">
+								<span class="contact__title">Phone:</span>
+								<span class="contact__value">+49 (0) 2273 - 949 68 10 / 11 / 12</span>
+							</div>
+							<div class="contact">
+								<span class="contact__title">Fax:</span>
+								<span class="contact__value">+49 (0) 2273 - 99 28 272</span>
+							</div>
+							<div class="contact">
+								<span class="contact__title">Email:</span>
+								<span class="contact__value">info@autobox24.com</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="website-description">
+						<img src="assets/img/content/johan.jpg" alt="">
+						<div class="text">
+							<p>At autobox24.com, we live by a simple rule. We want to make sure that you never have to pay retail prices for your quality auto parts ever again. We go out of our way to provide a comprehensive list of replacement discount auto parts for most car and truck models that are available today.</p>
+							<p>Johann Mack, Owner</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="footer-menu">
+				<a href="javascript:void(0)">About</a>
+				<a href="./parts.html" class="mobile-hidden">Parts</a>
+				<a href="javascript:void(0)" class="mobile-hidden">Products</a>
+				<a href="./prices.html">Prices</a>
+				<a href="javascript:void(0)">Policies</a>
+				<a href="./news.html" class="mobile-hidden">News</a>
+				<a href="./faq.html">FAQ</a>
+				<a href="javascript:void(0)" class="mobile-hidden">Feedback</a>
+				<a href="./contacts.html">Contacts</a>
+			</div>
+			<div class="footer-menu footer-menu--small">
+				<a href="javascript:void(0)">Terms</a>
+				<a href="javascript:void(0)">Legal</a>
+				<a href="javascript:void(0)">Privacy</a>
+				<a href="javascript:void(0)">Returns</a>
+				<a href="javascript:void(0)">Shipping</a>
+				<a href="javascript:void(0)">Secure</a>
+				<a href="javascript:void(0)">Guarantee and warranty</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="footer-bottom">
+	<div class="page-wrapper">
+		<div class="page-container">
+
+			<div class="two-cols">
+				<div class="col-left">
+
+					<div class="text-seo">
+						<p>
+							<span>Abart</span> - <span>AC Schnitzer</span> - <span>Acura</span> - <span>Alfa Romeo</span> - <span>Alpina</span> - <span>Aprilia</span> - <span>Aston Martin</span> - <span>Audi</span> - <span>Bentley</span> - <span>BMW</span> - <span>BMW Motorbike</span> - <span>Brabus</span> - <span>Bugatti</span> - <span>Cadillac</span> - <span>Chevrolet</span> - <span>Chrysler</span> - <span>Citroen</span> - <span>Dacia</span> - <span>Daewoo</span> - <span>DAF</span> - <span>Daihatsu</span> - <span>Deutz</span> - <span>Dodge</span> - <span>Ducati</span> - <span>EvoBus</span> - <span>Ferrari</span> - <span>Fiat</span> - <span>Fisker</span> - <span>Ford</span> - <span>FUSO</span> - <span>Holden</span> - <span>Honda</span> - <span>Hummer</span> - <span>Hyundai</span> - <span>Infiniti</span> - <span>Irisbus</span> - <span>Isuzu</span> - <span>Iveco</span> - <span>Jaguar</span> - <span>Jeep</span> - <span>Kawasaki</span> - <span>KIA</span> - <span>KTM</span> - <span>Lada</span> - <span>Lamborghini</span> - <span>Lancia</span> - <span>Landrover</span> - <span>Lexus</span> - <span>MAN</span> - <span>Maserati</span> - <span>Maybach</span> - <span>Mazda</span> - <span>McLaren</span> - <span>Mercedes-Benz</span> - <span>MG Rover</span> - <span>Mini</span> - <span>Mitsubishi</span> - <span>MTU</span> - <span>Neoplan</span> - <span>Nissan</span> - <span>Opel</span> - <span>Peugeot</span> - <span>Porsche</span> - <span>Proton</span> - <span>Renault</span> - <span>Renault Trucks</span> - <span>Rolls-Royce</span> - <span>Saab</span> - <span>Scania</span> - <span>Scion</span> - <span>Seat</span> - <span>Setra</span> - <span>Skoda</span> - <span>Smart</span> - <span>Solaris</span> - <span>SsangYong</span> - <span>Subaru</span> - <span>Suzuki</span> - <span>Toyota</span> - <span>Triumph</span> - <span>Vauxhall</span> - <span>Volkswagen</span> - <span>Volvo</span> - <span>Yamaha</span>
+						</p>
+						<p>
+							<span>ATE</span> - <span>BBS</span> - <span>Behr</span> - <span>Beru</span> - <span>Bilstein</span> - <span>Boge</span> - <span>Bosch</span> - <span>Brembo</span> - <span>Castrol</span> - <span>Champion</span> - <span>Continental</span> - <span>Eibach</span> - <span>FAG</span> - <span>Garrett</span> - <span>Gates</span> - <span>Hengst</span> - <span>INA</span> - <span>Lemförder</span> - <span>LUK</span> - <span>MANN</span> - <span>Meyle</span> - <span>Monroe</span> - <span>Mobil</span> - <span>Motul</span> - <span>Nexen</span> - <span>NGK</span> - <span>Pierburg</span> - <span>Sachs</span> - <span>Sekurit</span> - <span>SKF</span> - <span>Textar</span> - <span>Total</span> - <span>ULO</span> - <span>Valeo</span> - <span>Westfalia</span> - <span>ZF</span>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-right">
+					
+					<div class="social-links">
+						<a href="javascript:void(0)" class="social-link link-facebook">
+							<span class="icons-container">
+								<span class="icon icon-facebook"></span>
+								<span class="icon icon-facebook"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-twitter">
+							<span class="icons-container">
+								<span class="icon icon-twitter"></span>
+								<span class="icon icon-twitter"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-youtube">
+							<span class="icons-container">
+								<span class="icon icon-youtube"></span>
+								<span class="icon icon-youtube"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-instagram">
+							<span class="icons-container">
+								<span class="icon icon-instagram"></span>
+								<span class="icon icon-instagram"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-skype">
+							<span class="icons-container">
+								<span class="icon icon-skype"></span>
+								<span class="icon icon-skype"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-google-plus">
+							<span class="icons-container">
+								<span class="icon icon-google-plus"></span>
+								<span class="icon icon-google-plus"></span>
+							</span>
+						</a>
+						<a href="javascript:void(0)" class="social-link link-linkedin">
+							<span class="icons-container">
+								<span class="icon icon-linkedin"></span>
+								<span class="icon icon-linkedin"></span>
+							</span>
+						</a>
+					</div>
+
+					<div class="security-links">
+						<a href="https://www.yelp.com/biz/autobox24-kerpen" class="yelp"><img title="Recommended Reviews on Yelp" alt="Autobx24.com Recommended Reviews on Yelp" border="0" src="assets/img/content/banners/yelp_autobox24.png"></a>
+						<a href="https://safeweb.norton.com/report/show?url=www.autobox24.com" rel="nofollow" target="_blank" class="norton"><img title="Original car Parts Safe website by Norton" alt="Autobx24.com Genuine Auto Parts" border="0" src="assets/img/content/banners/norton_genuine_car_spare_parts.png"></a>
+						<a href="https://www.mcafeesecure.com/verify?host=autobox24.com" rel="nofollow" target="_blank" class="mcafee"><img title="Autobx24.com Genuine Auto Parts safe website" alt="Autobx24.com Genuine Auto Parts" border="0" src="assets/img/content/banners/mcafees.png"></a>
+						<a href="https://www.trustedsite.com/site/autobox24.com/" rel="nofollow" target="_blank" class="trust"><img title="Trust Website" alt="Trust Website" border="0" src="assets/img/content/banners/trustedsite.png"></a>
+					</div>
+
+					<div class="copyright">Copyright © 2017 autobox24. All rights reserved.<div class="copyright-container"><a href="javascript:void(0)" class="sitemap-link">SiteMap</a><a href="https://kaminskiy-design.com.ua/" rel="me" target="_blank" title="Создание сайтов в Киеве - веб студия KAM STUDIO" class="website-development">Website development</a></div></div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</footer>
+<!-- End of Page footer-->
+<!-- Authorization modal window -->
+<div class="modal__window modal__window--bg modal__window--authorization" data-modal-type="authorization">
+	<div class="modal__bg">
+		<div class="col-left">
+			<div class="image" style="background-image: url('assets/img/content/modal-bg1.jpg')"></div>
+			<div class="modal-logo"><img src="assets/img/content/logo.png" alt="Autobox"></div>
+		</div>
+		<div class="col-right">
+			
+		</div>
+	</div>
+
+	<!-- Each authorization form has own modal__wrapper -->
+	<!-- Registration form -->
+    <div class="modal__wrapper js_modal-part" data-modal-part="1">
+        <div class="modal__container">
+        	<div class="modal__header-content">
+				<div class="modal-header">
+					<h3 class="title">Registration</h3>
+					<button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+				</div>
+        	</div>
+			<div class="modal__content">
+				<div class="modal__content__container">
+					<div class="modal-body">
+						<form class="form-style">
+							<div class="fields-container">
+
+								<div class="fields-row">
+									<label class="col field-block">
+										<span class="field-block__title">Login<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-login" name="registration-login">
+											<span class="appearance"><span></span></span>
+										</span>
+										<span class="error-message">Error message for the field</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">Password<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-password" name="registration-password">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block field-block--invalid">
+										<span class="field-block__title">Confirm password<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="password" id="registration-password-confirmation" name="registration-password-confirmation">
+											<span class="appearance"><span></span></span>
+										</span>
+										<span class="error-message">Error message for the field</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">Name<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-name" name="registration-name">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Surname<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-surname" name="registration-surname">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">Company<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-company" name="registration-company">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Street<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-street" name="registration-street">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--3">
+									<label class="col field-block">
+										<span class="field-block__title">Town<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-town" name="registration-town">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Zip<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-zip" name="registration-zip">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Country<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-country" name="registration-country">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">Telephone<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="tel" id="registration-telephone" name="registration-telephone">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Email<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="email" id="registration-email" name="registration-email">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">www</span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-website" name="registration-website">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Weekly turnover<span class="field-block__title__star">*</span></span>
+										<span class="field-block__input-container">
+											<input type="text" id="registration-turnover" name="registration-turnover">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2 fields-row--captcha">
+									<div class="col captcha-block">
+										<img src="assets/img/content/captcha.png" alt="">
+									</div>
+
+									<label class="col field-block">
+										<span class="field-block__input-container">
+											<input type="text" id="login-captcha" name="login-captcha">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+							</div>
+
+							<div class="form-footer">
+								<div class="form-message icon icon-attention active">
+									Form contains some errors. Please, correct your information and then try again!
+								</div>
+								<div class="two-cols">
+									<div class="col-left">
+										<button type="submit" class="btn btn-red">Send</button>
+										<div class="message-container">
+											<div class="message">By registering you accept our terms and conditions</div>
+										</div>
+									</div>
+									<div class="col-right">
+										<div class="links"><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="2">I registered</a><span class="dash"></span><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="3">Forgot password?</a></div>
+									</div>
+								</div>
+							</div>
+
+	            		</form>
+	            	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- Login form -->
+	<div class="modal__wrapper js_modal-part" data-modal-part="2">
+		<div class="modal__container">
+			<div class="modal__header-content">
+				<div class="modal-header">
+					<h3 class="title">Login</h3>
+					<button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+				</div>
+			</div>
+
+			<div class="modal__content">
+				<div class="modal__content__container">
+					<div class="modal-body">
+						<form class="form-style">
+							<div class="fields-container">
+
+								<div class="fields-row fields-row--2">
+									<label class="col field-block">
+										<span class="field-block__title">Login</span>
+										<span class="field-block__input-container">
+											<input type="text" id="login" name="login">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+
+									<label class="col field-block">
+										<span class="field-block__title">Password</span>
+										<span class="field-block__input-container">
+											<input type="password" id="password" name="password">
+											<span class="appearance"><span></span></span>
+										</span>
+										<span class="error-message">Error message for the field</span>
+									</label>
+								</div>
+
+							</div>
+
+							<div class="form-footer">
+								<div class="two-cols">
+									<div class="col-left">
+										<button type="submit" class="btn btn-red">Log in</button>
+										<div class="message-container">
+											<div class="message">By registering you accept our terms and conditions</div>
+										</div>
+									</div>
+									<div class="col-right">
+										<div class="links"><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="1">I want to register</a><span class="dash"></span><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="3">Forgot password?</a></div>
+									</div>
+								</div>
+							</div>
+
+		        		</form>
+		        	</div>
+		        </div> 
+		    </div>
+		</div>
+	</div>
+
+	<!-- Password Recovery form -->
+	<div class="modal__wrapper js_modal-part" data-modal-part="3">
+		<div class="modal__container">
+			<div class="modal__header-content">
+				<div class="modal-header">
+					<h3 class="title">Password Recovery</h3>
+					<button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+				</div>
+			</div>
+
+			<div class="modal__content">
+				<div class="modal__content__container">
+					<div class="modal-body">
+						<form class="form-style">
+							<div class="fields-container">
+
+								<div class="fields-row">
+									<label class="col field-block">
+										<span class="field-block__title">Enter your e-mail, which you used for registration.</span>
+										<span class="field-block__input-container">
+											<input type="text" id="recovery-email" name="recovery-email">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2 fields-row--captcha">
+									<div class="col captcha-block">
+										<img src="assets/img/content/captcha.png" alt="">
+									</div>
+
+									<label class="col field-block">
+										<span class="field-block__input-container">
+											<input type="text" id="recovery-captcha" name="recovery-captcha">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+							</div>
+
+							<div class="form-footer">
+								<div class="two-cols">
+									<div class="col-left">
+										<button type="submit" class="btn btn-red">Send</button>
+										<div class="message-container">
+											<div class="message">You will be given a new password</div>
+										</div>
+									</div>
+									<div class="col-right">
+										<div class="links"><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="2">Login</a><span class="dash"></span><a href="" class="js_modal-open" data-modal-type="authorization" data-modal-part="1">I want to register</a></div>
+									</div>
+								</div>
+							</div>
+
+		        		</form>
+		        	</div>
+		        </div> 
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<!-- End of Authorization modal window -->
+
+
+<!-- Authorization modal window -->
+<div class="modal__window modal__window--bg modal__window--authorization" data-modal-type="email-feedback">
+	<div class="modal__bg">
+		<div class="col-left">
+			<div class="image" style="background-image: url('assets/img/content/modal-bg1.jpg')"></div>
+			<div class="modal-logo"><img src="assets/img/content/logo.png" alt="Autobox"></div>
+		</div>
+		<div class="col-right">
+			
+		</div>
+	</div>
+
+	<!-- Email feedback form -->
+	<div class="modal__wrapper js_modal-part" data-modal-part="1">
+		<div class="modal__container">
+			<div class="modal__header-content">
+				<div class="modal-header">
+					<h3 class="title">Contact by email</h3>
+					<button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+				</div>
+			</div>
+
+			<div class="modal__content">
+				<div class="modal__content__container">
+					<div class="modal-body">
+						<form class="form-style">
+							<div class="fields-container">
+
+								<div class="fields-row">
+									<label class="col field-block">
+										<span class="field-block__title">Enter your e-mail</span>
+										<span class="field-block__input-container">
+											<input type="text" id="feedback-email" name="feedback-email">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+								<div class="fields-row fields-row--2 fields-row--captcha">
+									<div class="col captcha-block">
+										<img src="assets/img/content/captcha.png" alt="">
+									</div>
+
+									<label class="col field-block">
+										<span class="field-block__input-container">
+											<input type="text" id="feedback-captcha" name="feedback-captcha">
+											<span class="appearance"><span></span></span>
+										</span>
+									</label>
+								</div>
+
+							</div>
+
+							<div class="form-footer">
+								<div class="col-full">
+									<button type="submit" class="btn btn-red">Send</button>
+									<div class="message-container">
+										<div class="message">We will contact you</div>
+									</div>
+								</div>
+							</div>
+
+		        		</form>
+		        	</div>
+		        </div> 
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Gallery modal window -->
+<div class="modal__window modal__window--gallery" data-modal-type="gallery">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__content">
+
+                <div class="gallery-slider js_gallery-slider">
+                    <div class="slider__container"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Gallery modal window -->
+
+
+
+
+
+
+<!-- Add products modal window -->
+<div class="modal__window modal__window--general" data-modal-type="add-products">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__header-content">
+                <div class="modal-header">
+                    <h3 class="title">Add products</h3>
+                    <button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+                </div>
+            </div>
+
+            <div class="modal__content">
+                <div class="modal__content__container">
+                    <form class="form-import">
+
+                        <div class="controls-block">
+                            <h5 class="controls-block__title">Choose format</h5>
+                            <div class="checkbox-blocks">
+                                <label class="checkbox-block">
+                                    <input type="radio" name="import-format" value="import-format-1" checked>
+                                    <span class="rectangle"></span>
+                                    <div class="checkbox-block__content">
+                                        <div class="formats-table-wrapper">
+                                            <table class="formats-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>partcode</td>
+                                                        <td>quant.</td>
+                                                        <td>comment</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="radio" name="import-format" value="import-format-1">
+                                    <span class="rectangle"></span>
+                                    <div class="checkbox-block__content">
+                                        <div class="formats-table-wrapper">
+                                            <table class="formats-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>partcode</td>
+                                                        <td>manuf.</td>
+                                                        <td>quant.</td>
+                                                        <td>comment</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-tabs-2 js_tabs-scope" data-tabs="1">
+                            <div class="form-tabs-2__nav">
+                                <button type="button" class="btn btn-tab-icon js_tabs-trigger active" data-tabs="1" data-tab="1">
+                                    <span class="btn-content icon icon-excel">Copy / Paste<span class="mobile-hidden"> order items</span></span>
+                                </button>
+                                <button type="button" class="btn btn-tab-icon js_tabs-trigger" data-tabs="1" data-tab="2">
+                                    <span class="btn-content icon icon-import">Import Excel<span class="mobile-hidden"> File</span></span>
+                                </button>
+                            </div>
+                            <div class="form-tabs-2__container">
+                                <div class="tab js_tabs-target active" data-tabs="1" data-tab="1">
+                                    <div class="controls-block">
+                                        <h5 class="controls-block__title">Choose delimiter</h5>
+                                        <div class="checkbox-blocks checkbox-blocks--inline">
+                                            <label class="checkbox-block">
+                                                <input type="radio" name="delimiter" value="delimiter-tab" checked>
+                                                <span class="rectangle"></span>
+                                                <div class="checkbox-block__content">
+                                                    <div class="text">Tab</div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox-block">
+                                                <input type="radio" name="delimiter" value="delimiter-semicolon" checked>
+                                                <span class="rectangle"></span>
+                                                <div class="checkbox-block__content">
+                                                    <div class="text">Semicolon</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <textarea class="import-textarea"></textarea>
+
+                                    <div class="form-style form-style--dark">
+                                        <div class="form-footer">
+                                            <div class="form-message icon icon-attention message-error active">
+                                                There are some errors!
+                                            </div>
+                                            <div class="form-message icon icon-success message-success active">
+                                                Import can be performed successfully.
+                                            </div>
+                                            <div class="action-buttons active">
+                                                <button type="reset" class="btn btn-grey-small">Reset</button>
+                                                <button type="submit" class="btn btn-red-small">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab js_tabs-target" data-tabs="1" data-tab="2">
+                                    <div class="controls-block">
+                                        <h5 class="controls-block__title">Choose Excel file</h5>
+                                        <div class="file-uploader js_file-uploader">
+                                            <label class="file-input">
+                                                <input type="file">
+                                                <span class="btn file-input__btn icon icon-import">Import</span>
+                                            </label>
+                                            <input class="file-name" type="text" disabled readonly>
+                                            <button type="button" class="btn btn-file-delete icon icon-trash"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-style form-style--dark">
+                                        <div class="form-footer">
+                                            <div class="form-message icon icon-attention message-error active">
+                                                There are some errors!
+                                            </div>
+                                            <div class="form-message icon icon-success message-success active">
+                                                Import can be performed successfully.
+                                            </div>
+                                            <div class="action-buttons active">
+                                                <button type="reset" class="btn btn-grey-small">Reset</button>
+                                                <button type="submit" class="btn btn-red-small">Upload</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Add products result modal window -->
+<div class="modal__window modal__window--general" data-modal-type="add-products-result">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__header-content">
+                <div class="modal-breadcrumbs">
+                    <span class="item active">Choose import type</span>
+                    <span class="item active">Fix errors</span>
+                    <span class="item">Finish</span>
+                </div>
+                <div class="modal-header">
+                    <h3 class="title">Import Result</h3>
+                    <button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+                </div>
+            </div>
+
+            <div class="modal__content">
+                <div class="modal__content__container">
+
+                    <div class="modal-msgs">
+                        <div class="msg"><b class="regular">5</b> Items were found successfully.</div>
+                        <div class="msg"><b>2</b> Items contain errors. You can use table below to fix this errors or try to <a href="javascript:void(0)" class="js_modal-open" data-modal-type="add-products">Reimport</a> once more with the corrected data.</div>
+                    </div>
+
+                    <div class="cart-table-container">
+                        <table id="import-result-table" class="table-style-black table-import-result js_dataTable">
+                            <thead>
+                                <tr>
+                                    <td class="cell-i-manuf">Manuf.</td>
+                                    <td class="cell-partcode">Partcode</td>
+                                    <td class="cell-quantity">Quant.</td>
+                                    <td class="cell-comment">Com.</td>
+                                    <td class="cell-error">Message</td>
+                                    <td class="cell-i-actions">Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-i-manuf">
+                                        <div class="title-mobile"><span class="text">Manuf.</span></div>
+                                        <div class="cell-value"></div>
+                                    </td>
+                                    <td class="cell-partcode" data-sort="">
+                                        <div class="title-mobile"><span class="text">Partcode</span></div>
+                                        <div class="cell-value">
+                                            <div class="inp-btn">
+                                                <input type="text" class="input-partcode" value="">
+                                                <button type="button" class="btn btn-inp-prc icon icon-arrows-circle2"></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-quantity" data-sort="10">
+                                        <div class="title-mobile"><span class="text">Quant.</span></div>
+                                        <div class="cell-value">
+                                            <div class="inp-btn">
+                                                <input type="text" class="input-quantity" value="0">
+                                                <button type="button" class="btn btn-inp-prc icon icon-arrows-circle2"></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-comment" data-cell="cell-comment">
+                                        <div class="title-mobile"><span class="text">Comment.</span></div>
+                                        <div class="editable-block">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-error" data-sort="Part not found">
+                                        <div class="title-mobile"><span class="text">Message</span></div>
+                                        <div class="cell-value">
+                                            <div class="i-errors">
+                                                <div class="i-errors-ct">
+                                                    <span class="error active js_i-error error-partcode">Part not found</span>
+                                                    <span class="error active js_i-error error-quantity">Quantity is undefined</span>
+                                                </div>
+                                                <div class="i-loader-ct">
+                                                    <img src="assets/img/icons-general/arrows-circle-blue.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-i-actions">
+                                        <div class="title-mobile"><span class="text">Actions</span></div>
+                                        <div class="cell-value">
+                                            <div class="i-actions-btns">
+                                                <button type="button" class="btn btn-i-apply icon icon-checkmark4"></button>
+                                                <button type="button" class="btn btn-i-delete icon icon-cross3 active"></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-i-manuf">
+                                        <div class="title-mobile"><span class="text">Manuf.</span></div>
+                                        <div class="cell-value">
+                                            <div class="dpd js_dropdown">
+                                                <div class="dpd-field">
+                                                    <div class="dpd-field-input">
+                                                        <span class="val js_dropdown-val">Select</span>
+                                                        <input type="text" class="js_dropdown-input" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="dpd-ct">
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)" class="js_dropdown-option" data-val="Audi">Audi</a></li>
+                                                        <li><a href="javascript:void(0)" class="js_dropdown-option" data-val="Mazda">Mazda</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td class="cell-partcode" data-sort="03810371423815714">
+                                        <div class="title-mobile"><span class="text">Partcode</span></div>
+                                        <div class="cell-value"><span class="nowrap">03810371423815714</span></div>
+                                    </td>
+                                    <td class="cell-quantity" data-sort="9">
+                                        <div class="title-mobile"><span class="text">Quant.</span></div>
+                                        <div class="cell-value">
+                                            <div class="inp-btn">
+                                                <input type="text" class="input-quantity" value="0">
+                                                <button type="button" class="btn btn-inp-prc icon icon-arrows-circle2"></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-comment" data-cell="cell-comment">
+                                        <div class="title-mobile"><span class="text">Comment.</span></div>
+                                        <div class="editable-block">
+                                            <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                            <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-error" data-sort="Quantity is undefined">
+                                        <div class="title-mobile"><span class="text">Message</span></div>
+                                        <div class="cell-value">
+                                            <div class="i-errors">
+                                                <div class="i-errors-ct">
+                                                    <span class="error js_i-error error-partcode">Part not found</span>
+                                                    <span class="error active js_i-error error-quantity">Quantity is undefined</span>
+                                                </div>
+                                                <div class="i-loader-ct">
+                                                    <img src="assets/img/icons-general/arrows-circle-blue.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-i-actions">
+                                        <div class="title-mobile"><span class="text">Actions</span></div>
+                                        <div class="cell-value">
+                                            <div class="i-actions-btns">
+                                                <button type="button" class="btn btn-i-apply icon icon-checkmark4"></button>
+                                                <button type="button" class="btn btn-i-delete icon icon-cross3 active"></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-style form-style--dark">
+                        <div class="form-footer">
+                            <div class="action-buttons active">
+                                <button type="reset" class="btn btn-green-small hidden btn-import-apply-all js_modal-open" data-modal-type="add-products-finish">Apply All</button>
+                                <button type="submit" class="btn btn-red-small btn-import-remove-all js_modal-open" data-modal-type="add-products-finish">Remove All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add products finish modal window -->
+<div class="modal__window modal__window--general active" data-modal-type="add-products-finish">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__header-content">
+                <div class="modal-breadcrumbs">
+                    <span class="item active">Choose import type</span>
+                    <span class="item active">Fix errors</span>
+                    <span class="item active">Finish</span>
+                </div>
+                <div class="modal-header">
+                    <h3 class="title">Finish</h3>
+                    <button class="btn-modal-close icon icon-cross3 js_modal-close"></button>
+                </div>
+            </div>
+
+            <div class="modal__content">
+                <div class="modal__content__container">
+
+                <!-- Brand -->
+                    <div class="i-brand">
+                        <header class="i-brand__header">
+                            <h3 class="title"><div class="logo-image"><img alt="" src="assets/img/icons-general/car-logos/Car-logos_BMW.svg"></div><span class="text">BMW</span></h3>
+                        </header>
+
+                    <!-- Brand Block -->
+                        <div class="i-brand__block">
+
+                            <div class="form-style form-style--dark">
+                                <div class="form-footer">
+                                    <div class="form-message icon icon-success message-success active" style="display: none">
+                                        <span class="i-brand-msg-quanity">0</span> Items imported successfully.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-tabs-2 js_tabs-scope" data-tabs="1">
+                                <div class="form-tabs-2__nav">
+                                    <button type="button" class="btn btn-tab js_tabs-trigger active" data-tabs="1" data-tab="1">
+                                        <span class="btn-content">Contact your manager for shipping details</span>
+                                    </button>
+                                    <button type="button" class="btn btn-tab js_tabs-trigger" data-tabs="1" data-tab="2">
+                                        <span class="btn-content">Delivery: 2 days</span>
+                                    </button>
+                                </div>
+                                <div class="form-tabs-2__container">
+                                    <div class="tab js_tabs-target active" data-tabs="1" data-tab="1">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10002</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 11</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">30,05</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab js_tabs-target" data-tabs="1" data-tab="2">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10002</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 11</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">38</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    <!-- Brand Block -->
+                        <div class="i-brand__block">
+
+                            <div class="form-style form-style--dark">
+                                <div class="form-footer">
+                                    <div class="form-message icon icon-success message-success active" style="display: none">
+                                        <span class="i-brand-msg-quanity">0</span> Items imported successfully.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-tabs-2 js_tabs-scope" data-tabs="1">
+                                <div class="form-tabs-2__nav">
+                                    <button type="button" class="btn btn-tab js_tabs-trigger active" data-tabs="1" data-tab="1">
+                                        <span class="btn-content">Delivery: 2 days</span>
+                                    </button>
+                                    <button type="button" class="btn btn-tab js_tabs-trigger" data-tabs="1" data-tab="2">
+                                        <span class="btn-content">Delivery: 3 days</span>
+                                    </button>
+                                </div>
+                                <div class="form-tabs-2__container">
+                                    <div class="tab js_tabs-target active" data-tabs="1" data-tab="1">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10004</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">66,5</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10005</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">142,5</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10019</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">52,25</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10021</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">152</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10023</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">228</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10025</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 12</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">503,5</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab js_tabs-target" data-tabs="1" data-tab="2">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10004</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">50</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10005</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">133</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10019</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">51,3</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10021</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">149,15</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10023</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">213,75</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value"><span class="nowrap">10025</span></div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 13</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">495,9</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    <!-- Brand Block -->
+                        <div class="i-brand__block">
+
+                            <div class="form-style form-style--dark">
+                                <div class="form-footer">
+                                    <div class="form-message icon icon-success message-success active" style="display: none">
+                                        <span class="i-brand-msg-quanity">0</span> Items imported successfully.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-tabs-2 js_tabs-scope" data-tabs="1">
+                                <div class="form-tabs-2__nav">
+                                    <button type="button" class="btn btn-tab js_tabs-trigger active" data-tabs="1" data-tab="1">
+                                        <span class="btn-content">Delivery: 4 days</span>
+                                    </button>
+                                    <button type="button" class="btn btn-tab js_tabs-trigger" data-tabs="1" data-tab="2">
+                                        <span class="btn-content">Delivery: 5 days</span>
+                                    </button>
+                                </div>
+                                <div class="form-tabs-2__container">
+                                    <div class="tab js_tabs-target active" data-tabs="1" data-tab="1">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10009</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 14</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">237,5</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10010</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 14</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">218,5</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10011</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 14</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">665</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab js_tabs-target" data-tabs="1" data-tab="2">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10009</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 15</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">231,8</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10010</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 15</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">232,75</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10011</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">BMW 15</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">760</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add All to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                <!-- Brand -->
+                    <div class="i-brand">
+                        <header class="i-brand__header">
+                            <h3 class="title"><div class="logo-image"><img alt="" src="assets/img/icons-general/car-logos/Car-logos_Land-Rover.svg"></div><span class="text">Land Rover</span></h3>
+                        </header>
+
+                    <!-- Brand Block -->
+                        <div class="i-brand__block">
+
+                            <div class="form-style form-style--dark">
+                                <div class="form-footer">
+                                    <div class="form-message icon icon-success message-success active" style="display: none">
+                                        <span class="i-brand-msg-quanity">0</span> Items imported successfully.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-tabs-2 js_tabs-scope" data-tabs="1">
+                                <div class="form-tabs-2__nav">
+                                    <button type="button" class="btn btn-tab js_tabs-trigger active" data-tabs="1" data-tab="1">
+                                        <span class="btn-content">Delivery: 1 day</span>
+                                    </button>
+                                    <button type="button" class="btn btn-tab js_tabs-trigger" data-tabs="1" data-tab="2">
+                                        <span class="btn-content">Delivery: 2 days</span>
+                                    </button>
+                                </div>
+                                <div class="form-tabs-2__container">
+                                    <div class="tab js_tabs-target active" data-tabs="1" data-tab="1">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10016</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">Land Rover 26</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">80,75</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add to Cart</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab js_tabs-target" data-tabs="1" data-tab="2">
+
+                                        <div class="cart-table-container">
+                                            <table class="table-style-black table-import-result table-import-result--compare">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="cell-partcode">Partcode</td>
+                                                        <td class="cell-discount">Disc.gr.</td>
+                                                        <td class="cell-comment">Com.</td>
+                                                        <td class="cell-comment">Descr.</td>
+                                                        <td class="cell-price"><span class="price">Price<span class="currency">€</span></span></td>
+                                                        <td class="cell-add">Add to Cart</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cell-partcode">
+                                                            <div class="title-mobile"><span class="text">Partcode</span></div>
+                                                            <div class="cell-value">
+                                                                <span class="nowrap">10016</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-discount">
+                                                            <div class="title-mobile"><span class="text">Disc.gr.</span></div>
+                                                            <div class="cell-value"><span class="nowrap">Land Rover 27</span></div>
+                                                        </td>
+                                                        <td class="cell-comment" data-cell="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Comment.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Buy part in store</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-comment">
+                                                            <div class="title-mobile"><span class="text">Descr.</span></div>
+                                                            <div class="editable-block">
+                                                                <div class="editable-block__value js_editable-value-container"><span class="js_editable-value">Partcode description</span></div>
+                                                                <div class="editable-block__textarea js_editable-input"><textarea class="comment-textarea js_editable-textarea"></textarea></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="cell-price">
+                                                            <div class="title-mobile"><span class="text"><span class="price">Price<span class="currency">€</span></span></span></div>
+                                                            <div class="cell-value"><span class="nowrap">83,6</span></div>
+                                                        </td>
+                                                        <td class="cell-add">
+                                                            <div class="title-mobile"><span class="text">Add to Cart</span></div>
+                                                            <div class="cell-value"><button class="btn btn-table-reg btn-i-add">+ Add</button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="i-brand-buy">
+                                            <button class="btn btn-i-brand-buy"><span class="icon"><span class="plus"></span></span>Add to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-style form-style--dark">
+                        <div class="form-footer">
+                            <div class="action-buttons action-buttons--center active">
+                                <button type="submit" class="btn btn-red-small">Finish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/base.min.js"></script>
+<script src="assets/js/user.min.js"></script>
+
+<!-- Import Cart script -->
+<script>
+    $('.btn-i-brand-buy').on('click', function(e) {
+        e.preventDefault();
+        var quantity = $(this).closest('.tab').find('table tbody tr').length;
+
+        $(this).closest('.i-brand__block').find('.form-tabs-2').hide();
+        $(this).closest('.i-brand__block').find('.message-success').slideDown(300).find('.i-brand-msg-quanity').text(quantity);
+    });
+    $('.btn-i-add').on('click', function(e) {
+        e.preventDefault();
+        var tbody = $(this).closest('table').find('tbody'),
+            index = +$(this).closest('tr').index(),
+            quantity = $(this).closest('.i-brand__block').find('.message-success .i-brand-msg-quanity');
+
+            console.log(index);
+
+        $(this).closest('.i-brand__block').find('.tab').each(function() {
+            $(this).find('table tbody tr').eq(index).addClass('hidden');
+        });
+        if (tbody.find('tr').length === tbody.find('tr.hidden').length) {
+            $(this).closest('.i-brand__block').find('.form-tabs-2').hide();
+        }
+        $(this).closest('.i-brand__block').find('.message-success').slideDown(300).find('.i-brand-msg-quanity').text(+quantity.text() + 1);
+
+    });
+</script>
+<!-- File uploader -->
+<script>
+$(document).ready(function() {
+
+    $('.js_file-uploader input').on('change', function(e) {
+        // var fileName = '';
+        //     if( this.files && this.files.length > 1 )
+        //         fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+        //     else
+        //         fileName = e.target.value.split( '\\' ).pop();
+
+        //     if( fileName )
+        //         label.querySelector( 'span' ).innerHTML = fileName;
+        //     else
+        //         label.innerHTML = labelVal;
+
+        var uploader = $(this).closest('.js_file-uploader'),
+            fileNameBlock = uploader.find('.file-name'),
+            fileName = $(this).val().split( '\\' ).pop();
+
+        fileNameBlock.val(fileName);
+    });
+
+    $('.js_file-uploader .btn-file-delete').on('click', function(e) {
+        e.preventDefault();
+
+        var uploader = $(this).closest('.js_file-uploader'),
+            fileInput = uploader.find('input[type=file]'),
+            fileNameBlock = uploader.find('.file-name');
+
+        fileInput.val('');
+        fileNameBlock.val('');
+    })
+    
+});
+</script>
+
+<script>
+    var cartTable = $('#cart-table'),
+        importResultTable = $('#import-result-table'),
+        cartDataTable,
+        importDataTable;
+
+    if (cartTable.length) {
+        initCartTable(cartTable);
+    };
+    if (importResultTable.length) {
+        initImportTable(importResultTable);
+    };
+
+    function initCartTable(table) {
+        cartDataTable = table.DataTable({
+            "autoWidth": false,
+            "searching": false,
+            "paging": false,
+            "info": false,
+            "columns": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false }
+            ],
+            "order": []
+        });
+
+        table.on( 'init', function () {
+            cs.checkEditableHeight();
+        } );
+    }
+
+    function initImportTable(table) {
+        importDataTable = table.DataTable({
+            "autoWidth": false,
+            "searching": false,
+            "paging": false,
+            "info": false,
+            "columns": [
+                null,
+                null,
+                { "orderable": false },
+                null
+            ],
+            "order": []
+        });
+
+        table.on( 'init', function () {
+            cs.checkEditableHeight();
+        } );
+    }
+
+    $(document).on('keypress', '.input-quantity', function(e) {
+        return isNumberKey(e);
+
+        function isNumberKey(evt){
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
+
+            return true;
+        }
+
+    });
+    $(document).on('change', '.input-quantity', function(e) {
+        var $this = $(e.target);
+            value = $this.val().trim(),
+            cell = $this.closest('td');
+
+        cell.attr('data-sort', value);
+        if ($(this).closest('#cart-table').length) {
+            cartDataTable.row(cell.closest('tr')).invalidate().draw();  
+        } else if ($(this).closest('#import-result-table').length) {
+            importDataTable.row(cell.closest('tr')).invalidate().draw();  
+        }
+
+    });
+</script>
+
+
+
+</body>
+</html>

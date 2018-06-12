@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	color:#979ba0;
+	font-size:18px;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+#login-content
+{
+	width:100%;
+	height:100%;
+	background: #464b55;
+    background: -moz-radial-gradient(center, circle cover, #767f90 0%, #3d424b 100%);
+    background: -webkit-radial-gradient(center, circle cover, #767f90 0%, #3d424b 100%);
+    background: -o-radial-gradient(center, circle cover, #767f90 0%, #3d424b 100%);
+    background: -ms-radial-gradient(center, circle cover, #767f90 0%, #3d424b 100%);
+    background: radial-gradient(center, circle cover, #767f90 0%, #3d424b 100%);
+	overflow:hidden;
+	position:relative;		
+}
+#login-content #login-input
+{
+	position:absolute;
+    top:50%;
+    left:50%;
+    margin:-120px 0 0 -160px;
+}  
+#login-input
+{
+	width:320px;
+	height:240px;
+	margin:auto;
+	vertical-align:central;
+}  
+#login-input-logo
+{
+	width:320px;
+	height:80px;
+	background:url(../img/logo.png) center no-repeat;
+}
+#login-input-cont
+{
+	width:319px;
+	height:159px;
+	border:1px solid #2b313c;
+	border-radius:5px;
+	background:#343c49;
+	-moz-box-shadow: 0px 1px 0px 0px #101214;
+	-webkit-box-shadow: 0px 1px 0px 0px #101214;
+	box-shadow: 0px 1px 0px 0px #101214;
+}
+#login-input-log
+{
+	width:319px;
+	height:79px;
+	border-bottom:1px solid #2b313c;
+	background:none;
+}
+#login-input-log input
+{
+	width:237px;
+	height:30px;
+	margin-top:19px;
+	margin-left:28px;
+	background: url(../img/log-icon.png) left center no-repeat;
+	border:none;
+	padding:0px 35px;
+	font-size:14px;
+	font-weight:400;
+	outline:none !important;
+	font-family: 'Open Sans', sans-serif;
+}
+input{
+	color:#d0d6de;
+	}
+input::-webkit-input-placeholder 
+	{
+	color:#707a8a;
+	}
+input:focus::-webkit-input-placeholder 
+	{
+	color:#707a8a;
+	}
+#login-input-log input:focus{
+	background: url(../img/log-icon_focus.png) left center no-repeat;
+	}
+#login-input-pass
+{
+	width:319px;
+	height:79px;
+	background:none;
+}
+#login-input-pass input
+{
+	width:237px;
+	height:30px;
+	margin-top:19px;
+	margin-left:28px;
+	background: url(../img/pass-icon.png) left center no-repeat;
+	border:none;
+	padding:0px 35px;
+	font-size:14px;
+	font-weight:400;
+	outline:none !important;
+	font-family: 'Open Sans', sans-serif;
+}
+#login-input-pass input:focus{
+	background: url(../img/log-pass_focus.png) left center no-repeat;
+	}
+input:-webkit-autofill {
+    background-color: white !important;
+}
