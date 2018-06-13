@@ -43,15 +43,15 @@
                             <tbody>
                                 <tr>
                                     <td>{{ $_page->text_8 }}: <span class="value">{{ $order->status_name }}</span></td>%
-                                    <td>{{ $_page->text_4 }}: <span class="value total_netto">{{ sprintf("%.2f", $order->brutto) }}</span></td>
+                                    <td>{{ $_page->text_4 }}: <span class="value total_netto">{{ number_format($order->brutto, 2, '.', '') }}</span></td>
                                 </tr>
                                 <tr>
                                     <td>{{ $_page->text_3 }}: <span class="value">{{ date('d.m.Y', strtotime($order->created)) }}</span></td>
-                                    <td>{{ $_page->text_5 }}: <span class="value">{{ sprintf("%.2f", $order->vat) }}%</span></td>
+                                    <td>{{ $_page->text_5 }}: <span class="value">{{ number_format($order->vat, 2) }}%</span></td>
                                 </tr>
                                 <tr>
-                                    <td>{{ $_page->text_7 }}: <span class="value">20</span></td>
-                                    <td>{{ $_page->text_6 }}: <span class="value total_brutto">{{ sprintf("%.2f", ( $order->brutto + ( $order->brutto/100*$order->vat ) ) ) }}</span></td>
+                                    <td>{{ $_page->text_7 }}: <span class="value">-</span></td>
+                                    <td>{{ $_page->text_6 }}: <span class="value total_brutto">{{ number_format(( $order->brutto + ( $order->brutto/100*$order->vat ) ), 2, '.', '') }}</span></td>
                                     <input type="hidden" name="order" id="order-identifier" value="{{ $order->id }}">
                                 </tr>
                             </tbody>
@@ -260,7 +260,7 @@
                                                                   <td class="cell-details-number">{{ $_page->text_25 }}</td>
                                                                   <td class="cell-details-date">{{ $_page->text_26 }}</td>
                                                                   <td class="cell-details-quantity">{{ $_page->text_27 }}</td>
-                                                                  <td class="cell-details-factor">{{ $_page->text_29 }}</td>
+                                                                  <?php /* <td class="cell-details-factor">{{ $_page->text_29 }}</td> */ ?>
                                                                   <td class="cell-details-brutto-price"><span class="price">{{ $_page->text_30 }}</span></td>
                                                                   <td class="cell-details-sum"><span class="price">{{ $_page->text_31 }}</span></td>
                                                                   <td class="cell-details-comment">{{ $_page->text_32 }}</td>
@@ -284,10 +284,12 @@
                                                                       <div class="title-mobile"><span class="text">{{ $_page->text_27 }}</span></div>
                                                                       <div class="cell-value"><span class="nowrap">{{ $bsproduct->Quant }}</span></div>
                                                                   </td>
+                                                                  <?php /* 
                                                                   <td class="cell-details-factor" data-sort="">
                                                                       <div class="title-mobile"><span class="text">{{ $_page->text_29 }}</span></div>
                                                                       <div class="cell-value"><span class="nowrap">{{ ( $bsproduct->Discount_Percent < 0 ? abs($bsproduct->Discount_Percent).'%' : ' - ' ) }}</span></div>
                                                                   </td>
+                                                                  */ ?>
                                                                   <td class="cell-details-brutto-price" data-sort="">
                                                                       <div class="title-mobile"><span class="text"><span class="price">{{ $_page->text_30 }}</span></span></div>
                                                                       <div class="cell-value"><span class="nowrap">{{ number_format($bsproduct->Netto_Price, 2, ',', ' ') }}</span></div>

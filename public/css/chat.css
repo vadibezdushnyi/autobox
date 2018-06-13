@@ -32,6 +32,7 @@
 .file-icon:hover:before{
   border-width: 2px;
 }
+.file-icon.whitebg::before{border-color: #fff #fff rgba(255,255,255,.35) rgba(255,255,255,.35);}
 .file-icon::before {
   display: block;
   content: "";

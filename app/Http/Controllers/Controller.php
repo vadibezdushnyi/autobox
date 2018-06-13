@@ -53,6 +53,7 @@ class Controller extends BaseController
 
       $this->user = new \stdClass;
       $this->user->KundenId = 0;
+      $this->user->country = 0;
       $this->locale = App::getLocale();
       $this->db_prefix = Config::get('app.locales.'.$this->locale.'.db_prefix');
       $this->months = Config::get('app.months');
@@ -76,9 +77,9 @@ class Controller extends BaseController
       }
 
       $this->page = $this->setViewDescription($action);
-      $this->location = self::get_geo_location();
+      // $this->location = self::get_geo_location();
       $this->settings = $this->setGlobalSettings();
-      $this->settings->order_vat = $this->location->country == 'de' ? floatval($this->settings->order_vat) : 0;
+      $this->settings->order_vat = $this->user->country == 82 ? floatval($this->settings->order_vat) : 0;
       view()->share('_settings', $this->settings);
       view()->share('_scripts', $this->setGlobalSripts());
       view()->share('_cart', $this->getUserCart());
@@ -907,6 +908,35 @@ class Controller extends BaseController
           `".$this->db_prefix."text_37` as text_37
           FROM osc_page_profile_settings LIMIT 1"
         ))->first();
+      elseif($action=='balance'):
+        $result = collect(DB::select(
+          "SELECT `indexing`,
+          `".$this->db_prefix."meta_title` as meta_title,
+          `".$this->db_prefix."meta_keys` as meta_keys,
+          `".$this->db_prefix."meta_desc` as meta_desc,
+          `".$this->db_prefix."text_1` as text_1,
+          `".$this->db_prefix."text_2` as text_2,
+          `".$this->db_prefix."text_3` as text_3,
+          `".$this->db_prefix."text_4` as text_4,
+          `".$this->db_prefix."text_5` as text_5,
+          `".$this->db_prefix."text_6` as text_6,
+          `".$this->db_prefix."text_7` as text_7,
+          `".$this->db_prefix."text_8` as text_8,
+          `".$this->db_prefix."text_9` as text_9,
+          `".$this->db_prefix."text_10` as text_10,
+          `".$this->db_prefix."text_11` as text_11,
+          `".$this->db_prefix."text_12` as text_12,
+          `".$this->db_prefix."text_13` as text_13,
+          `".$this->db_prefix."text_14` as text_14,
+          `".$this->db_prefix."text_15` as text_15,
+          `".$this->db_prefix."text_16` as text_16,
+          `".$this->db_prefix."text_17` as text_17,
+          `".$this->db_prefix."text_18` as text_18,
+          `".$this->db_prefix."text_19` as text_19,
+          `".$this->db_prefix."text_20` as text_20,
+          `".$this->db_prefix."text_21` as text_21
+          FROM osc_page_profile_balance LIMIT 1"
+        ))->first();
       elseif($action=='terms'):
         $result = collect(DB::select(
           "SELECT `indexing`,
@@ -1228,7 +1258,7 @@ class Controller extends BaseController
         LEFT JOIN crm_producers AS M ON DG.ProducerId = M.Id
         LEFT JOIN crm_clientdiscountgroups CDG ON CDG.DiscountGroupId = DG.Id
         WHERE CDG.ClientId = $kunden_id
-        GROUP BY DG.OwnerSupplierId
+        GROUP BY M.id, DG.OwnerSupplierId
         ORDER BY M.Name, DG.OwnerSupplierId
         LIMIT 1000"
       );
@@ -1497,8 +1527,8 @@ class Controller extends BaseController
           AND OP.removed=0"
         );
         foreach($order->products as &$product):
-            $order->netto += round($product->netto, 2);
-            $order->brutto += round($product->brutto_sum, 2);
+            $order->netto += $product->netto;
+            $order->brutto += $product->brutto_sum;
             $order->instock += $product->in_stock;
             $order->sent += $product->sent;
             $order->all += $product->qty;
